@@ -1,0 +1,2292 @@
+2015-08-10 15:03:30.0799 | INFO | ExecuteScalar:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214303' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='芝加哥天空' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='鳳凰城水星' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','02:00','E',@teamaid,@teambid,'23,10,24,17','26,11,6,21',74,64,214303,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214304' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='華盛頓奇異' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='康乃狄陽光' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','04:00','E',@teamaid,@teambid,'17,17,21,29','12,10,16,35',84,73,214304,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214305' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='陶沙暴震' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='阿特蘭大夢想' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','04:30','E',@teamaid,@teambid,'19,23,25,23','23,27,27,21',90,98,214305,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214306' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='明尼蘇達天貓' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='洛杉磯火花' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','07:00','E',@teamaid,@teambid,'20,17,15,20','8,24,16,16',72,64,214306,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217394' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='廣西威壯' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='北京東方雄鹿' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217394,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218404' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='塞爾維亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法國U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,218404,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218407' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='俄羅斯U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉脫維亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,218407,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218405' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='克羅地亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='芬蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:45','X',@teamaid,@teambid,NULL,NULL,0,0,218405,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218408' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='以色列U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='意大利U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:45','X',@teamaid,@teambid,NULL,NULL,0,0,218408,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218401' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='希臘U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='土耳其U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:59','X',@teamaid,@teambid,NULL,NULL,0,0,218401,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218402' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='立陶宛U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='英格蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:59','X',@teamaid,@teambid,NULL,NULL,0,0,218402,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218398' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='法國' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='俄羅斯' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:15','E',@teamaid,@teambid,'28,22,21,22','11,19,18,7',93,55,218398,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218399' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='以色列' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='烏克蘭' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','02:15','E',@teamaid,@teambid,'22,20,14,27','15,28,19,26',83,88,218399,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218381' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='克羅地亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='立陶宛女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','00:15','E',@teamaid,@teambid,'18,16,21,16','19,10,14,12',71,55,218381,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218385' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='西班牙女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法國女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','02:15','E',@teamaid,@teambid,'10,25,20,21','16,11,19,14',76,60,218385,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218314' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='智利女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='多米尼加共和國女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','03:00','E',@teamaid,@teambid,'21,25,18,24','12,19,17,8',88,56,218314,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218324' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='厄瓜多爾女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='美屬維京群島女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','05:15','E',@teamaid,@teambid,'21,14,13,24','7,6,18,17',72,48,218324,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218315' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='加拿大女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='波多黎各女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','08:30','E',@teamaid,@teambid,'30,26,23,15','22,7,12,16',94,57,218315,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218325' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='巴西女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='委內瑞拉女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','10:45','E',@teamaid,@teambid,'24,19,17,26','18,22,13,18',86,71,218325,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218393' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛伐克女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉脫維亞女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','00:30','E',@teamaid,@teambid,'6,16,5,22','10,13,11,11',49,45,218393,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217647' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛伐克U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='羅馬尼亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','18:45','X',@teamaid,@teambid,NULL,NULL,0,0,217647,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217662' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛文尼亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='愛爾蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','18:45','X',@teamaid,@teambid,NULL,NULL,0,0,217662,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217691' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='葡萄牙U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='瑞典U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','18:45','X',@teamaid,@teambid,NULL,NULL,0,0,217691,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217648' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='波蘭U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='蘇格蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,217648,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217663' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='奧地利U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='捷克U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,217663,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217676' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='比利時U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='盧森堡U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,217676,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217649' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='保加利亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='丹麥U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,217649,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217677' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='瑞士U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='匈牙利U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,217677,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217692' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='愛沙尼亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='馬其頓U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,217692,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217661' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='捷克U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='荷蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:30','E',@teamaid,@teambid,'14,18,11,14','16,17,12,14',57,59,217661,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217675' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='瑞士U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='比利時U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:30','E',@teamaid,@teambid,'13,13,12,8','19,17,13,26',46,75,217675,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217690' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='冰島U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='愛沙尼亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:30','E',@teamaid,@teambid,'7,14,20,15','24,24,15,27',56,90,217690,NULL,'結束',NULL,0,0)
+end
+end
+ 
+
+2015-08-10 15:03:30.2239 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214303' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='芝加哥天空' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='鳳凰城水星' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','02:00','E',@teamaid,@teambid,'23,10,24,17','26,11,6,21',74,64,214303,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214304' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='華盛頓奇異' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='康乃狄陽光' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','04:00','E',@teamaid,@teambid,'17,17,21,29','12,10,16,35',84,73,214304,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214305' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='陶沙暴震' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='阿特蘭大夢想' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','04:30','E',@teamaid,@teambid,'19,23,25,23','23,27,27,21',90,98,214305,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214306' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='明尼蘇達天貓' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='洛杉磯火花' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','07:00','E',@teamaid,@teambid,'20,17,15,20','8,24,16,16',72,64,214306,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217394' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='廣西威壯' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='北京東方雄鹿' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217394,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218404' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='塞爾維亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法國U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,218404,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218407' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='俄羅斯U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉脫維亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,218407,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218405' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='克羅地亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='芬蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:45','X',@teamaid,@teambid,NULL,NULL,0,0,218405,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218408' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='以色列U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='意大利U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:45','X',@teamaid,@teambid,NULL,NULL,0,0,218408,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218401' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='希臘U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='土耳其U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:59','X',@teamaid,@teambid,NULL,NULL,0,0,218401,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218402' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='立陶宛U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='英格蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:59','X',@teamaid,@teambid,NULL,NULL,0,0,218402,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218398' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='法國' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='俄羅斯' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:15','E',@teamaid,@teambid,'28,22,21,22','11,19,18,7',93,55,218398,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218399' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='以色列' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='烏克蘭' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','02:15','E',@teamaid,@teambid,'22,20,14,27','15,28,19,26',83,88,218399,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218381' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='克羅地亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='立陶宛女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','00:15','E',@teamaid,@teambid,'18,16,21,16','19,10,14,12',71,55,218381,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218385' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='西班牙女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法國女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','02:15','E',@teamaid,@teambid,'10,25,20,21','16,11,19,14',76,60,218385,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218314' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='智利女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='多米尼加共和國女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','03:00','E',@teamaid,@teambid,'21,25,18,24','12,19,17,8',88,56,218314,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218324' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='厄瓜多爾女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='美屬維京群島女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','05:15','E',@teamaid,@teambid,'21,14,13,24','7,6,18,17',72,48,218324,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218315' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='加拿大女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='波多黎各女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','08:30','E',@teamaid,@teambid,'30,26,23,15','22,7,12,16',94,57,218315,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218325' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='巴西女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='委內瑞拉女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','10:45','E',@teamaid,@teambid,'24,19,17,26','18,22,13,18',86,71,218325,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218393' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛伐克女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉脫維亞女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','00:30','E',@teamaid,@teambid,'6,16,5,22','10,13,11,11',49,45,218393,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217647' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛伐克U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='羅馬尼亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','18:45','X',@teamaid,@teambid,NULL,NULL,0,0,217647,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217662' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛文尼亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='愛爾蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','18:45','X',@teamaid,@teambid,NULL,NULL,0,0,217662,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217691' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='葡萄牙U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='瑞典U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','18:45','X',@teamaid,@teambid,NULL,NULL,0,0,217691,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217648' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='波蘭U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='蘇格蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,217648,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217663' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='奧地利U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='捷克U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,217663,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217676' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='比利時U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='盧森堡U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,217676,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217649' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='保加利亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='丹麥U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,217649,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217677' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='瑞士U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='匈牙利U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,217677,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217692' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='愛沙尼亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='馬其頓U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,217692,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217661' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='捷克U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='荷蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:30','E',@teamaid,@teambid,'14,18,11,14','16,17,12,14',57,59,217661,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217675' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='瑞士U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='比利時U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:30','E',@teamaid,@teambid,'13,13,12,8','19,17,13,26',46,75,217675,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217690' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='冰島U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='愛沙尼亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:30','E',@teamaid,@teambid,'7,14,20,15','24,24,15,27',56,90,217690,NULL,'結束',NULL,0,0)
+end
+end
+ 
+
+2015-08-10 15:09:29.8886 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217391' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='安徽文一' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='河南賒店老酒' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','19:30','E',@teamaid,@teambid,'31,27,25,35','18,30,23,9',118,80,217391,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218376' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='馬其頓' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='烏克蘭' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','02:15','E',@teamaid,@teambid,'22,15,26,18','15,7,15,14',81,51,218376,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218377' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='塞爾維亞' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='俄羅斯' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','02:30','E',@teamaid,@teambid,'19,23,15,18','14,14,18,10',75,56,218377,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218394' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='巴西' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='阿根廷' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','21:00','E',@teamaid,@teambid,'14,19,9,17,8','16,15,14,14,2',67,61,218394,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218395' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='拉脫維亞' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='斯洛文尼亞' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','23:30','E',@teamaid,@teambid,'23,16,16,17','10,22,19,15',72,66,218395,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218396' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='匈牙利' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='葡萄牙' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','23:59','E',@teamaid,@teambid,'25,13,21,12','7,16,12,15',71,50,218396,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218397' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='比利時' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='希臘' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','23:59','E',@teamaid,@teambid,'12,18,11,23','21,9,13,16',64,59,218397,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218400' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='冰島' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='荷蘭' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','23:59','E',@teamaid,@teambid,'20,21,11,13','16,17,18,22',65,73,218400,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218370' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='克羅地亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='以色列女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','00:30','E',@teamaid,@teambid,'19,20,23,15','10,20,19,13',77,62,218370,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218372' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='意大利女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='西班牙女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','00:30','E',@teamaid,@teambid,'13,15,10,18','14,18,11,23',56,66,218372,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218362' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='塞爾維亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='立陶宛女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','02:45','E',@teamaid,@teambid,'11,15,8,9','24,18,24,12',43,78,218362,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218373' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='法國女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='俄羅斯女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','02:45','E',@teamaid,@teambid,'18,19,15,10','19,12,12,16',62,59,218373,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218378' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='愛沙尼亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='葡萄牙女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','17:30','E',@teamaid,@teambid,'9,10,17,13','18,21,6,15',49,60,218378,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218382' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='荷蘭女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='比利時女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','19:30','E',@teamaid,@teambid,'11,20,8,11','21,11,16,10',50,58,218382,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218380' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='以色列女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='塞爾維亞女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','19:45','E',@teamaid,@teambid,'11,13,13,8','18,19,20,16',45,73,218380,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218383' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛文尼亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='捷克女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','21:45','E',@teamaid,@teambid,'24,22,14,22','6,16,18,15',82,55,218383,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218379' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='波蘭女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='匈牙利女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','22:00','E',@teamaid,@teambid,'9,9,14,9','15,9,8,14',41,46,218379,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218384' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='意大利女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='俄羅斯女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','23:59','E',@teamaid,@teambid,'7,11,15,19','17,24,16,14',52,71,218384,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218357' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='芬蘭女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='白俄羅斯女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','01:15','E',@teamaid,@teambid,'19,16,13,14','11,13,10,16',62,50,218357,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218361' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='拉脫維亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='土耳其女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','01:15','E',@teamaid,@teambid,'18,8,13,15','7,7,11,16',54,41,218361,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218358' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='阿爾巴尼亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='冰島女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','14:30','E',@teamaid,@teambid,'13,12,18,7','13,11,24,22',50,70,218358,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218389' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='希臘女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='芬蘭女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','15:30','E',@teamaid,@teambid,'18,9,11,15','14,13,15,14',53,56,218389,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218359' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='塞浦路斯女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='愛爾蘭女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','16:45','E',@teamaid,@teambid,'14,18,10,14','29,19,22,20',56,90,218359,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218390' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='波斯尼亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='丹麥女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','17:45','E',@teamaid,@teambid,'15,13,18,19','15,14,15,17',65,61,218390,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218386' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='保加利亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='瑞士女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','19:00','E',@teamaid,@teambid,'9,9,21,7,12','12,9,11,14,6',58,52,218386,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218391' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='羅馬尼亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='德國女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','20:00','E',@teamaid,@teambid,'15,6,16,17','11,16,19,13',54,59,218391,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218387' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='盧森堡女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='烏克蘭女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','21:15','E',@teamaid,@teambid,'12,9,10,10','11,13,17,20',41,61,218387,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218392' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='瑞典女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='土耳其女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','22:15','E',@teamaid,@teambid,'6,13,14,16','18,21,16,5',49,60,218392,NULL,'結束',NULL,0,1)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218388' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='英格蘭女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='白俄羅斯女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-09','23:30','E',@teamaid,@teambid,'18,13,9,10','19,8,23,18',50,68,218388,NULL,'結束',NULL,0,1)
+end
+end
+ 
+
+2015-08-10 15:09:42.4764 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214303' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='芝加哥天空' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='鳳凰城水星' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','02:00','E',@teamaid,@teambid,'23,10,24,17','26,11,6,21',74,64,214303,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214304' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='華盛頓奇異' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='康乃狄陽光' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','04:00','E',@teamaid,@teambid,'17,17,21,29','12,10,16,35',84,73,214304,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214305' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='陶沙暴震' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='阿特蘭大夢想' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','04:30','E',@teamaid,@teambid,'19,23,25,23','23,27,27,21',90,98,214305,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214306' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='明尼蘇達天貓' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='洛杉磯火花' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','07:00','E',@teamaid,@teambid,'20,17,15,20','8,24,16,16',72,64,214306,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217394' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='廣西威壯' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='北京東方雄鹿' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217394,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218404' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='塞爾維亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法國U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,218404,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218407' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='俄羅斯U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉脫維亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,218407,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218405' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='克羅地亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='芬蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:45','X',@teamaid,@teambid,NULL,NULL,0,0,218405,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218408' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='以色列U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='意大利U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:45','X',@teamaid,@teambid,NULL,NULL,0,0,218408,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218401' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='希臘U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='土耳其U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:59','X',@teamaid,@teambid,NULL,NULL,0,0,218401,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218402' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='立陶宛U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='英格蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:59','X',@teamaid,@teambid,NULL,NULL,0,0,218402,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218398' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='法國' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='俄羅斯' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:15','E',@teamaid,@teambid,'28,22,21,22','11,19,18,7',93,55,218398,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218399' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='友誼賽'
+select @teamaid= teamid from osteam with(nolock) where teamname='以色列' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='烏克蘭' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','02:15','E',@teamaid,@teambid,'22,20,14,27','15,28,19,26',83,88,218399,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218381' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='克羅地亞女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='立陶宛女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','00:15','E',@teamaid,@teambid,'18,16,21,16','19,10,14,12',71,55,218381,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218385' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='西班牙女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法國女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','02:15','E',@teamaid,@teambid,'10,25,20,21','16,11,19,14',76,60,218385,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218314' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='智利女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='多米尼加共和國女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','03:00','E',@teamaid,@teambid,'21,25,18,24','12,19,17,8',88,56,218314,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218324' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='厄瓜多爾女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='美屬維京群島女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','05:15','E',@teamaid,@teambid,'21,14,13,24','7,6,18,17',72,48,218324,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218315' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='加拿大女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='波多黎各女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','08:30','E',@teamaid,@teambid,'30,26,23,15','22,7,12,16',94,57,218315,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218325' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='巴西女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='委內瑞拉女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','10:45','E',@teamaid,@teambid,'24,19,17,26','18,22,13,18',86,71,218325,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218393' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U18 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛伐克女籃U18' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉脫維亞女籃U18' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','00:30','E',@teamaid,@teambid,'6,16,5,22','10,13,11,11',49,45,218393,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217647' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛伐克U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='羅馬尼亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','18:45','X',@teamaid,@teambid,NULL,NULL,0,0,217647,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217662' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛文尼亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='愛爾蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','18:45','X',@teamaid,@teambid,NULL,NULL,0,0,217662,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217691' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='葡萄牙U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='瑞典U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','18:45','X',@teamaid,@teambid,NULL,NULL,0,0,217691,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217648' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='波蘭U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='蘇格蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,217648,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217663' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='奧地利U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='捷克U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,217663,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217676' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='比利時U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='盧森堡U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,217676,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217649' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='保加利亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='丹麥U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,217649,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217677' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='瑞士U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='匈牙利U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,217677,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217692' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='愛沙尼亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='馬其頓U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,217692,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217661' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='捷克U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='荷蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:30','E',@teamaid,@teambid,'14,18,11,14','16,17,12,14',57,59,217661,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217675' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='瑞士U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='比利時U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:30','E',@teamaid,@teambid,'13,13,12,8','19,17,13,26',46,75,217675,NULL,'結束',NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217690' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='冰島U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='愛沙尼亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-10','01:30','E',@teamaid,@teambid,'7,14,20,15','24,24,15,27',56,90,217690,NULL,'結束',NULL,0,0)
+end
+end
+ 
+
+2015-08-10 15:09:43.1883 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218403' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='西班牙U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='德國U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-11','02:15','X',@teamaid,@teambid,NULL,NULL,0,0,218403,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218406' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='黑山U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='波斯尼亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-11','02:15','X',@teamaid,@teambid,NULL,NULL,0,0,218406,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218326' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='厄瓜多爾女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='阿根廷女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-11','03:00','X',@teamaid,@teambid,NULL,NULL,0,0,218326,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218327' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='美屬維京群島女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='委內瑞拉女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-11','05:15','X',@teamaid,@teambid,NULL,NULL,0,0,218327,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218316' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='加拿大女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='智利女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-11','08:30','X',@teamaid,@teambid,NULL,NULL,0,0,218316,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218317' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='古巴女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='多米尼加共和國女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-11','10:45','X',@teamaid,@teambid,NULL,NULL,0,0,218317,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217664' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='挪威U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='荷蘭U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-11','01:30','X',@teamaid,@teambid,NULL,NULL,0,0,217664,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217678' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='白俄羅斯U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='格魯吉亞U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-11','01:30','X',@teamaid,@teambid,NULL,NULL,0,0,217678,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217693' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='烏克蘭U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='冰島U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-11','01:30','X',@teamaid,@teambid,NULL,NULL,0,0,217693,NULL,NULL,NULL,0,0)
+end
+end
+ 
+
+2015-08-10 15:09:43.6083 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214307' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='華盛頓奇異' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='印第安納狂熱' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-12','07:00','X',@teamaid,@teambid,NULL,NULL,0,0,214307,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214308' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='紐約自由人' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='芝加哥天空' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-12','07:00','X',@teamaid,@teambid,NULL,NULL,0,0,214308,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214309' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='明尼蘇達天貓' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='聖安東尼奧銀星' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-12','08:00','X',@teamaid,@teambid,NULL,NULL,0,0,214309,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214310' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='洛杉磯火花' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='西雅圖暴風' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-12','10:30','X',@teamaid,@teambid,NULL,NULL,0,0,214310,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218318' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='波多黎各女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='古巴女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-12','03:00','X',@teamaid,@teambid,NULL,NULL,0,0,218318,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218328' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='阿根廷女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='美屬維京群島女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-12','05:15','X',@teamaid,@teambid,NULL,NULL,0,0,218328,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218319' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='加拿大女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='多米尼加共和國女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-12','08:30','X',@teamaid,@teambid,NULL,NULL,0,0,218319,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218329' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='巴西女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='厄瓜多爾女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-12','10:45','X',@teamaid,@teambid,NULL,NULL,0,0,218329,NULL,NULL,NULL,0,0)
+end
+end
+ 
+
+2015-08-10 15:09:44.0459 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214311' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='康乃狄陽光' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='陶沙暴震' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','07:00','X',@teamaid,@teambid,NULL,NULL,0,0,214311,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214312' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='鳳凰城水星' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='西雅圖暴風' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','10:00','X',@teamaid,@teambid,NULL,NULL,0,0,214312,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218320' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='智利女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='古巴女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','03:00','X',@teamaid,@teambid,NULL,NULL,0,0,218320,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218321' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='多米尼加共和國女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='波多黎各女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','05:15','X',@teamaid,@teambid,NULL,NULL,0,0,218321,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218330' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='委內瑞拉女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='阿根廷女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','08:30','X',@teamaid,@teambid,NULL,NULL,0,0,218330,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218331' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='美屬維京群島女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='巴西女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','10:45','X',@teamaid,@teambid,NULL,NULL,0,0,218331,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218415' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='克羅地亞女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='斯洛伐克女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,218415,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218427' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='匈牙利女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉脫維亞女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,218427,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218409' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='荷蘭女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='捷克女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,218409,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218421' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='德國女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法國女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-13','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,218421,NULL,NULL,NULL,0,0)
+end
+end
+ 
+
+2015-08-10 15:09:44.9859 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217395' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='北京東方雄鹿' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='安徽文一' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217395,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217396' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='南京軍區悅達' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉薩淨土' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217396,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217397' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='廣西威壯' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='香港信達' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217397,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217398' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='河南賒店老酒' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='鄭州大運' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217398,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218332' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='委內瑞拉女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='厄瓜多爾女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','03:00','X',@teamaid,@teambid,NULL,NULL,0,0,218332,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218322' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='波多黎各女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='智利女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','05:15','X',@teamaid,@teambid,NULL,NULL,0,0,218322,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218323' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='加拿大女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='古巴女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','08:30','X',@teamaid,@teambid,NULL,NULL,0,0,218323,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218333' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女美錦'
+select @teamaid= teamid from osteam with(nolock) where teamname='阿根廷女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='巴西女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','10:45','X',@teamaid,@teambid,NULL,NULL,0,0,218333,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218410' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='意大利女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='土耳其女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','01:30','X',@teamaid,@teambid,NULL,NULL,0,0,218410,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218422' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='比利時女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='塞爾維亞女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','01:30','X',@teamaid,@teambid,NULL,NULL,0,0,218422,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218428' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='英格蘭女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='西班牙女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','03:45','X',@teamaid,@teambid,NULL,NULL,0,0,218428,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218416' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='葡萄牙女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='俄羅斯女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','04:15','X',@teamaid,@teambid,NULL,NULL,0,0,218416,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218411' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='捷克女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='意大利女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,218411,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218423' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='法國女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='比利時女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,218423,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218412' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='土耳其女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='荷蘭女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,218412,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218424' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='塞爾維亞女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='德國女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,218424,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215540' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='本迪高勇士' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='布里斯班斯巴達人' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','18:00','X',@teamaid,@teambid,NULL,NULL,0,0,215540,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215541' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='吉隆超級貓' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='基爾塞斯眼鏡蛇' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','18:00','X',@teamaid,@teambid,NULL,NULL,0,0,215541,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215542' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='霍巴特電光' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法蘭克斯頓藍調' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','18:00','X',@teamaid,@teambid,NULL,NULL,0,0,215542,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='216205' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='东南澳女聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='本迪高勇士女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='布里斯班斯巴達人女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','16:00','X',@teamaid,@teambid,NULL,NULL,0,0,216205,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='216206' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='东南澳女聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='霍巴特電光女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法蘭克斯頓藍調女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','16:00','X',@teamaid,@teambid,NULL,NULL,0,0,216206,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='216207' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='东南澳女聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='吉隆超級貓女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='基爾塞斯眼鏡蛇女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-14','16:00','X',@teamaid,@teambid,NULL,NULL,0,0,216207,NULL,NULL,NULL,0,0)
+end
+end
+ 
+
+2015-08-10 15:09:45.8025 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214316' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='紐約自由人' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='陶沙暴震' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','07:00','X',@teamaid,@teambid,NULL,NULL,0,0,214316,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217399' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='香港信達' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='安徽文一' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217399,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217400' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='北京東方雄鹿' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='鄭州大運' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217400,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='217401' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='拉薩淨土' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='河南賒店老酒' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','19:30','X',@teamaid,@teambid,NULL,NULL,0,0,217401,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218419' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='俄羅斯女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='斯洛伐克女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','01:30','X',@teamaid,@teambid,NULL,NULL,0,0,218419,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218431' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='匈牙利女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='英格蘭女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','01:30','X',@teamaid,@teambid,NULL,NULL,0,0,218431,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218420' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='葡萄牙女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='克羅地亞女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','03:45','X',@teamaid,@teambid,NULL,NULL,0,0,218420,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218432' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='西班牙女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉脫維亞女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','03:45','X',@teamaid,@teambid,NULL,NULL,0,0,218432,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215548' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='紐納華丁幽靈' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='芒特甘比爾先鋒' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','11:30','X',@teamaid,@teambid,NULL,NULL,0,0,215548,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215549' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='桑德林漢姆軍刀' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='丹德農遊騎兵' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','12:30','X',@teamaid,@teambid,NULL,NULL,0,0,215549,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='216213' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='东南澳女聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='桑德林漢姆軍刀女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='丹德農遊騎兵女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-16','10:30','X',@teamaid,@teambid,NULL,NULL,0,0,216213,NULL,NULL,NULL,0,0)
+end
+end
+ 
+
+2015-08-10 15:09:48.0316 | INFO | updateGameData:
+declare @ctrlStates int
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='聖安東尼奧銀星' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='西雅圖暴風' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='214302'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='27,16,20,25',[RunsB] = '12,22,24,23',[RA] = 88,[RB] = 81,[TrackerText] =NULL,[StatusText] = '結束',[Record]=NULL,[GameDate]='2015-08-09',[GameTime]='08:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=214302 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='27,16,20,25',[RunsB] = '12,22,24,23',[RA] = 88,[RB] = 81,[GameDate]='2015-08-09',[GameTime]='08:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='214302' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]=NULL,[RunsA] ='27,16,20,25',[RunsB] = '12,22,24,23',[RA] = 88,[RB] = 81,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='214302' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]=NULL,[GameDate]='2015-08-09',[GameTime]='08:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='214302' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='鄭州大運' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉薩淨土' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217392'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='21,29,22,26',[RunsB] = '29,11,26,19',[RA] = 98,[RB] = 85,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='19:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217392 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='21,29,22,26',[RunsB] = '29,11,26,19',[RA] = 98,[RB] = 85,[GameDate]='2015-08-09',[GameTime]='19:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217392' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='21,29,22,26',[RunsB] = '29,11,26,19',[RA] = 98,[RB] = 85,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217392' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='19:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217392' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='NBL'
+select @teamaid= teamid from osteam with(nolock) where teamname='香港信達' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='貴州森航' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217393'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='33,19,15,18,4',[RunsB] = '23,23,19,20,12',[RA] = 89,[RB] = 97,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='19:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217393 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='33,19,15,18,4',[RunsB] = '23,23,19,20,12',[RA] = 89,[RB] = 97,[GameDate]='2015-08-09',[GameTime]='19:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217393' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='33,19,15,18,4',[RunsB] = '23,23,19,20,12',[RA] = 89,[RB] = 97,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217393' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='19:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217393' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='法國U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='拉脫維亞U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217634'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='14,7,9,17',[RunsB] = '6,10,11,8',[RA] = 47,[RB] = 35,[TrackerText] =NULL,[StatusText] = '結束',[Record]=NULL,[GameDate]='2015-08-09',[GameTime]='02:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217634 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='14,7,9,17',[RunsB] = '6,10,11,8',[RA] = 47,[RB] = 35,[GameDate]='2015-08-09',[GameTime]='02:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217634' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]=NULL,[RunsA] ='14,7,9,17',[RunsB] = '6,10,11,8',[RA] = 47,[RB] = 35,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217634' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]=NULL,[GameDate]='2015-08-09',[GameTime]='02:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217634' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='欧錦U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='西班牙U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='希臘U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217625'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='12,18,19,23',[RunsB] = '14,13,13,18',[RA] = 72,[RB] = 58,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='02:50',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217625 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='12,18,19,23',[RunsB] = '14,13,13,18',[RA] = 72,[RB] = 58,[GameDate]='2015-08-09',[GameTime]='02:50',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217625' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='12,18,19,23',[RunsB] = '14,13,13,18',[RA] = 72,[RB] = 58,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217625' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='02:50',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217625' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='斯洛文尼亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='捷克U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217658'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='19,15,17,15,9',[RunsB] = '16,7,18,25,4',[RA] = 75,[RB] = 70,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='01:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217658 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='19,15,17,15,9',[RunsB] = '16,7,18,25,4',[RA] = 75,[RB] = 70,[GameDate]='2015-08-09',[GameTime]='01:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217658' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='19,15,17,15,9',[RunsB] = '16,7,18,25,4',[RA] = 75,[RB] = 70,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217658' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='01:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217658' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='白俄羅斯U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='瑞士U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217672'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='9,14,24,13',[RunsB] = '21,16,7,18',[RA] = 60,[RB] = 62,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='01:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217672 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='9,14,24,13',[RunsB] = '21,16,7,18',[RA] = 60,[RB] = 62,[GameDate]='2015-08-09',[GameTime]='01:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217672' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='9,14,24,13',[RunsB] = '21,16,7,18',[RA] = 60,[RB] = 62,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217672' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='01:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217672' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='愛沙尼亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='葡萄牙U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217687'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='21,16,30,27',[RunsB] = '11,8,6,15',[RA] = 94,[RB] = 40,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='01:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217687 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='21,16,30,27',[RunsB] = '11,8,6,15',[RA] = 94,[RB] = 40,[GameDate]='2015-08-09',[GameTime]='01:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217687' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='21,16,30,27',[RunsB] = '11,8,6,15',[RA] = 94,[RB] = 40,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217687' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='01:30',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217687' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='蘇格蘭U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='斯洛伐克U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217644'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='5,6,13,7',[RunsB] = '28,29,13,21',[RA] = 31,[RB] = 91,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='18:45',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217644 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='5,6,13,7',[RunsB] = '28,29,13,21',[RA] = 31,[RB] = 91,[GameDate]='2015-08-09',[GameTime]='18:45',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217644' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='5,6,13,7',[RunsB] = '28,29,13,21',[RA] = 31,[RB] = 91,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217644' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='18:45',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217644' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='愛爾蘭U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='挪威U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217659'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='19,14,19,14',[RunsB] = '15,18,15,15',[RA] = 66,[RB] = 63,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='18:45',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217659 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='19,14,19,14',[RunsB] = '15,18,15,15',[RA] = 66,[RB] = 63,[GameDate]='2015-08-09',[GameTime]='18:45',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217659' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='19,14,19,14',[RunsB] = '15,18,15,15',[RA] = 66,[RB] = 63,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217659' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='18:45',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217659' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='瑞典U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='馬其頓U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217688'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='22,23,22,25',[RunsB] = '9,17,21,8',[RA] = 92,[RB] = 55,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='18:45',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217688 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='22,23,22,25',[RunsB] = '9,17,21,8',[RA] = 92,[RB] = 55,[GameDate]='2015-08-09',[GameTime]='18:45',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217688' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='22,23,22,25',[RunsB] = '9,17,21,8',[RA] = 92,[RB] = 55,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217688' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='18:45',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217688' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='丹麥U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='羅馬尼亞U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217645'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='12,22,13,16',[RunsB] = '16,14,17,12',[RA] = 63,[RB] = 59,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='21:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217645 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='12,22,13,16',[RunsB] = '16,14,17,12',[RA] = 63,[RB] = 59,[GameDate]='2015-08-09',[GameTime]='21:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217645' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='12,22,13,16',[RunsB] = '16,14,17,12',[RA] = 63,[RB] = 59,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217645' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='21:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217645' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='奧地利U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='斯洛文尼亞U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217660'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='8,9,9,13',[RunsB] = '23,12,18,20',[RA] = 39,[RB] = 73,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='21:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217660 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='8,9,9,13',[RunsB] = '23,12,18,20',[RA] = 39,[RB] = 73,[GameDate]='2015-08-09',[GameTime]='21:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217660' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='8,9,9,13',[RunsB] = '23,12,18,20',[RA] = 39,[RB] = 73,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217660' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='21:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217660' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='盧森堡U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='白俄羅斯U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217673'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='20,15,21,29',[RunsB] = '16,13,13,27',[RA] = 85,[RB] = 69,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='21:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217673 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='20,15,21,29',[RunsB] = '16,13,13,27',[RA] = 85,[RB] = 69,[GameDate]='2015-08-09',[GameTime]='21:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217673' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='20,15,21,29',[RunsB] = '16,13,13,27',[RA] = 85,[RB] = 69,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217673' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='21:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217673' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='保加利亞U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='波蘭U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217646'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='22,11,19,14',[RunsB] = '11,26,17,14',[RA] = 66,[RB] = 68,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='23:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217646 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='22,11,19,14',[RunsB] = '11,26,17,14',[RA] = 66,[RB] = 68,[GameDate]='2015-08-09',[GameTime]='23:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217646' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='22,11,19,14',[RunsB] = '11,26,17,14',[RA] = 66,[RB] = 68,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217646' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='23:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217646' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='匈牙利U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='格魯吉亞U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217674'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='12,9,9,21',[RunsB] = '18,12,13,12',[RA] = 51,[RB] = 55,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='23:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217674 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='12,9,9,21',[RunsB] = '18,12,13,12',[RA] = 51,[RB] = 55,[GameDate]='2015-08-09',[GameTime]='23:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217674' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='12,9,9,21',[RunsB] = '18,12,13,12',[RA] = 51,[RB] = 55,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217674' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='23:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217674' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='歐錦U16 B'
+select @teamaid= teamid from osteam with(nolock) where teamname='葡萄牙U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='烏克蘭U16' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='217689'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='17,21,24,23',[RunsB] = '15,12,10,19',[RA] = 85,[RB] = 56,[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='23:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=217689 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='17,21,24,23',[RunsB] = '15,12,10,19',[RA] = 85,[RB] = 56,[GameDate]='2015-08-09',[GameTime]='23:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217689' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[RunsA] ='17,21,24,23',[RunsB] = '15,12,10,19',[RA] = 85,[RB] = 56,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217689' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]='只顯示最終比分',[GameDate]='2015-08-09',[GameTime]='23:15',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='217689' and gametype='BKOS'
+end
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='本迪高勇士' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='吉隆超級貓' and allianceid=@allianceid
+select @ctrlStates=CtrlStates from [BasketballSchedules] with(nolock) where webid='215539'
+IF @ctrlStates=0
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[RunsA] ='16,19,21,19,18',[RunsB] = '24,15,21,15,6',[RA] = 93,[RB] = 81,[TrackerText] =NULL,[StatusText] = '結束',[Record]=NULL,[GameDate]='2015-08-09',[GameTime]='11:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid=215539 and gametype='BKOS'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [BasketballSchedules] SET [RunsA] ='16,19,21,19,18',[RunsB] = '24,15,21,15,6',[RA] = 93,[RB] = 81,[GameDate]='2015-08-09',[GameTime]='11:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='215539' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=2
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]=NULL,[RunsA] ='16,19,21,19,18',[RunsB] = '24,15,21,15,6',[RA] = 93,[RB] = 81,[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='215539' and gametype='BKOS'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [BasketballSchedules] SET [GameStates] ='E',[TrackerText] =NULL,[StatusText] = '結束',[Record]=NULL,[GameDate]='2015-08-09',[GameTime]='11:00',[ChangeCount] =[ChangeCount]+1,TeamAID=@teamaid,TeamBID=@teambid,AllianceID=@allianceid where webid='215539' and gametype='BKOS'
+end
+end
+ 
+
+2015-08-10 15:10:03.4246 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214313' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='康乃狄陽光' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='紐約自由人' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','07:00','X',@teamaid,@teambid,NULL,NULL,0,0,214313,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214314' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='阿特蘭大夢想' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='明尼蘇達天貓' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','07:30','X',@teamaid,@teambid,NULL,NULL,0,0,214314,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='214315' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='WNBA'
+select @teamaid= teamid from osteam with(nolock) where teamname='西雅圖暴風' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='芝加哥天空' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','10:00','X',@teamaid,@teambid,NULL,NULL,0,0,214315,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218417' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='俄羅斯女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='克羅地亞女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','01:30','X',@teamaid,@teambid,NULL,NULL,0,0,218417,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218429' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='西班牙女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='匈牙利女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','01:30','X',@teamaid,@teambid,NULL,NULL,0,0,218429,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218418' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='葡萄牙女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='斯洛伐克女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','03:45','X',@teamaid,@teambid,NULL,NULL,0,0,218418,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218430' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='拉脫維亞女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='英格蘭女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','03:45','X',@teamaid,@teambid,NULL,NULL,0,0,218430,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218413' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='意大利女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='荷蘭女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,218413,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218425' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='比利時女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='德國女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','21:00','X',@teamaid,@teambid,NULL,NULL,0,0,218425,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218414' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='捷克女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='土耳其女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,218414,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='218426' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='女歐U16 A'
+select @teamaid= teamid from osteam with(nolock) where teamname='法國女籃U16' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='塞爾維亞女籃U16' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','23:15','X',@teamaid,@teambid,NULL,NULL,0,0,218426,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215543' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='堪培拉槍手' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='吉隆超級貓' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','17:30','X',@teamaid,@teambid,NULL,NULL,0,0,215543,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215544' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='丹德農遊騎兵' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='布里斯班斯巴達人' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','17:30','X',@teamaid,@teambid,NULL,NULL,0,0,215544,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215545' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='塔斯馬尼亞迅雷' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法蘭克斯頓藍調' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','17:30','X',@teamaid,@teambid,NULL,NULL,0,0,215545,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215546' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='基爾塞斯眼鏡蛇' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='巴拉瑞特礦工' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','18:00','X',@teamaid,@teambid,NULL,NULL,0,0,215546,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='215547' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='東南澳聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='奧伯里沃東加大盜' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='芒特甘比爾先鋒' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','18:00','X',@teamaid,@teambid,NULL,NULL,0,0,215547,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='216208' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='东南澳女聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='丹德農遊騎兵女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='布里斯班斯巴達人女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','15:30','X',@teamaid,@teambid,NULL,NULL,0,0,216208,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='216209' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='东南澳女聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='堪培拉女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='吉隆超級貓女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','15:30','X',@teamaid,@teambid,NULL,NULL,0,0,216209,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='216210' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='东南澳女聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='基爾塞斯眼鏡蛇女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='巴拉瑞特礦工女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','16:00','X',@teamaid,@teambid,NULL,NULL,0,0,216210,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='216211' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='东南澳女聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='奧伯里沃東加大盜女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='紐納華丁幽靈女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','16:00','X',@teamaid,@teambid,NULL,NULL,0,0,216211,NULL,NULL,NULL,0,0)
+end
+set @webid=null
+select @webid=webid from [BasketballSchedules] with(nolock) where webid='216212' and gametype='BKOS'
+if @webid is null
+begin
+select @allianceid=allianceid from osalliance with(nolock) where alliancename='东南澳女聯'
+select @teamaid= teamid from osteam with(nolock) where teamname='朗塞斯頓龍卷風女籃' and allianceid=@allianceid
+select @teambid= teamid from osteam with(nolock) where teamname='法蘭克斯頓藍調女籃' and allianceid=@allianceid
+INSERT INTO [BasketballSchedules] ([GameType],[AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[Record],[OrderBy],[IsDeleted]) VALUES ('BKOS',@allianceid,'2015-08-15','16:30','X',@teamaid,@teambid,NULL,NULL,0,0,216212,NULL,NULL,NULL,0,0)
+end
+end
+ 
+

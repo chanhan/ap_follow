@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XML>
+  <Database>
+    <SqlServer>t3.ts33.net</SqlServer>
+    <DB>SportInfoV5</DB>
+    <UID>sport888</UID>
+    <PWD>123123</PWD>
+    <WRITE>true</WRITE>
+  </Database>
+  
+  <BBLMP>
+    <!-- 墨西哥冬季棒球賽季-->
+    <season>2014</season>
+  </BBLMP>
+
+  <!-- 域名設定 -->
+  <Url>
+    <!-- 奧訊來源目前没用到bet007 -->
+    <bet007>interface.bet007.com,interface.titan007.com,interface.win007.com</bet007>
+    <!-- 足球来源网设置-->
+    <!-- 格式  todayUrl:今日即时比分,yesterdayUrl:昨天比分,tomorrowUrl:往后7天（这里是拼接的http://www.spbo.com/new1.htm）-->
+    <football>
+      <todayUrl>http://bf.spbo.com/</todayUrl>
+      <yesterdayUrl>http://www.spbo.com/end0.htm</yesterdayUrl>
+      <tomorrowUrl>http://www.spbo.com/new</tomorrowUrl>    
+    </football>  
+
+  </Url>
+  <BKBJ>
+    <!-- 多组帐号用英文,隔开 帐号密码对应 -->
+    <user>magicxiaoy@gmail.com</user>
+    <pwd>wsx159357</pwd>
+  </BKBJ>
+  
+  <!-- 
+    運動 Proxy 設定說明:
+    Section(區段): 可將同來源的運動分組執行不同 Proxy。
+    Sports(運動縮寫): 多個使用","分隔，跟 Program.cs -> GetSportType() 方法內名稱有關聯。
+    Proxy(代理): 有輸入則使用代理，無輸入則無使用代理，格式"127.0.0.1:8080"
+  -->
+  <ProxySettings>
+  <!--超过设定秒数未下载到资料，使用代理-->
+    <UseProxySeconds>
+        100
+    </UseProxySeconds>
+   <Section>
+     <Sports>BKOS</Sports>
+      <!-- 不使用代理-->
+      <!--   <Proxy>-1,117.135.132.107:666</Proxy>-->
+      <!-- 使用代理-->
+      <Proxy>yv2.ts33.net:666,yv3.ts33.net:666,yv3.ts33.net:555,117.135.134.133:666,117.135.132.107:666</Proxy>
+      <Url>http://interface.win007.com/lq/today.aspx</Url>
+      <Url1>http://interface.win007.com/lq/change.xml</Url1>
+      <Url2>http://interface.win007.com/lq/LqSchedule.aspx?time={0:yyyy-MM-dd}</Url2>
+    </Section>
+    <!-- Asiascore(西亞，亞美尼亞)比賽通用proxy-->
+    <AsiascoreProxy>
+      <Proxy>-1, 124.107.164.214:808, 50.23.112.170:808, dv1.ts33.net:555, dv2.ts33.net:555, dv3.ts33.net:555</Proxy>
+    </AsiascoreProxy>
+
+    <!-- 足球(football)走勢(中國河北)proxy-->
+    <Spbo1Proxy>
+      <Proxy>-1</Proxy>
+    </Spbo1Proxy>
+    
+    <!-- 足球(football) 美國-->
+    <Section>
+      <Sports>football</Sports>
+      <Proxy>-1</Proxy>
+    </Section>
+
+    <!-- 日本職棒(NPB) 日本-->
+    <Section>
+      <Sports>NPB</Sports>
+      <Proxy>-1, 50.23.112.170:808, 202.32.156.170:80, jv2.ts33.net:555, jv3.ts33.net:555, jv4.ts33.net:555, jv5.ts33.net:555</Proxy>
+    </Section>
+
+    <!-- 韓國職棒(KBO) 韓國 --><!-- , 50.23.112.170:808, 220.90.215.40:8080, 121.162.229.242:3128 -->
+    <Section>
+      <Sports>KBO</Sports>
+      <Proxy>-1</Proxy>
+      <Url>http://sports.news.naver.com/schedule/index.nhn?category=kbo</Url>
+      <Url1>http://sportsdata.naver.com/ndata/kbo/{0}/{1}/{2}.nsd</Url1>
+    </Section>
+
+    <!-- 美國職棒-國際聯盟(IL)、美國職棒-太平洋岸聯盟(PCL)、墨西哥-夏季聯盟(LMB)、墨西哥-冬季聯盟(LMP)-->
+    <Section>
+      <Sports>IL,PCL,LMB,LMP</Sports>
+      <Proxy>-1, 50.23.112.170:808, utv01.ts33.net:555, utv02.ts33.net:555</Proxy>
+    </Section>
+
+    <!-- 日本職籃(BJ)-->
+    <Section>
+      <Sports>BJ</Sports>
+      <Proxy>-1, 202.32.156.170:80, jv2.ts33.net:555, jv3.ts33.net:555, jv4.ts33.net:555, jv5.ts33.net:555</Proxy>
+    </Section>
+
+    <!-- 韓國職籃-女子(WKBL)-->
+    <Section>
+      <Sports>WKBL</Sports>
+      <Proxy>-1, 50.23.112.170:808, 122.36.58.104:8089, 121.162.229.242:3128, 220.90.215.40:8080</Proxy>
+    </Section>
+
+    <!-- 美國女子職籃(WNBA)-->
+    <Section>
+      <Sports>WNBA</Sports>
+      <Proxy>-1, 50.23.112.170:808, 124.107.164.214:808, utv01.ts33.net:555, utv02.ts33.net:555</Proxy>
+    </Section>
+
+    <!-- 美國冰球(AHL)-->
+    <Section>
+      <Sports>AHL</Sports>
+      <Proxy>-1, 50.23.112.170:808, utv01.ts33.net:555, utv02.ts33.net:555</Proxy>
+    </Section>
+
+    <!-- 
+      中華職棒(CPBL)
+    -->
+    <Section>
+      <Sports>CPBL</Sports>
+      <Proxy></Proxy>
+      <Url>http://www.cpbl.com.tw/standings/Allscoreqry.aspx</Url>
+      <Url1>http://online.cpbl.com.tw/online2010/ScoreBoard.aspx?gameno=01&amp;pbyear={0}&amp;game={1}</Url1>
+      <Url2>http://online.cpbl.com.tw/online2010/Inner.aspx?gameno=01&amp;pbyear={0}&amp;game={1}</Url2>
+      <Url3>http://online.cpbl.com.tw/online2010/Game.aspx?gameno=01&amp;pbyear={0}&amp;game={1}</Url3>
+    </Section>
+    <!-- 网球-->
+   <Section>
+      <Sports>tennis</Sports>
+       <Url>http://d.flashscore.com/x/feed/f_2_0_8_en-asia_1</Url>
+       <Url1>http://d.flashscore.com/x/feed/proxy</Url1>
+       <Url2>http://d.flashscore.com/x/feed/f_2_-1_8_en-asia_1</Url2>
+       <Url3>http://d.flashscore.com/x/feed/f_2_</Url3>
+    </Section>
+    <Section>
+      <Sports>PKJQ</Sports>
+      <Proxy></Proxy>
+      <FoolballCornerPath>C:\速报ap\Follow_Server\CornerTeamName.xml</FoolballCornerPath>
+      <ts>http://216.12.194.212:4050/ashx/sp8888_out.ashx</ts>
+      <tsRecordSource>http://216.12.194.212:4050/page/sp8888_pkjl.aspx</tsRecordSource>
+      <tsFloatSource>http://216.12.194.212:4050/page/myflot.aspx</tsFloatSource>
+      <corner>http://216.12.194.212:4050/Ashx/sp8888_jqs.ashx</corner>
+      <score>http://216.12.194.212:4050/Ashx/sp8888_footScore.ashx</score>
+    </Section>
+
+  </ProxySettings> 
+</XML>

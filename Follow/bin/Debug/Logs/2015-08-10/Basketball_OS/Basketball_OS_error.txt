@@ -1,0 +1,36 @@
+2015-08-10 15:45:22.4395 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：基础连接已经关闭: 连接被意外关闭。 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-10 15:45:22.4395 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：基础连接已经关闭: 连接被意外关闭。 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-10 15:46:26.2355 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-10 15:46:29.6769 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-10 15:46:32.2100 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-10 15:46:35.1193 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+

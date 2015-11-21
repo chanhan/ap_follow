@@ -1,0 +1,4 @@
+2015-08-10 14:49:50.6546 | INFO | http://interface.win007.com/lq/change.xml
+<?xml  version="1.0" encoding="gb2312"?><c refresh='0'></c>
+使用 Proxy:yv2.ts33.net:666 
+

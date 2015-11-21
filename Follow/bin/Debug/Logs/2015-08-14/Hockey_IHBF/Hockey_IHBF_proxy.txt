@@ -1,0 +1,22 @@
+2015-08-14 13:38:12.4296 | INFO | http://d.flashscore.com/x/feed/f_4_-1_8_asia_1
+ 發生錯誤：请求被中止: 请求已被取消。 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-14 13:59:45.6999 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-14 14:00:27.1182 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-14 14:01:28.9897 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-14 14:02:10.2289 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-14 14:03:11.8682 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-14 14:03:52.5662 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-14 14:04:53.3094 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-14 14:05:34.3875 | INFO | 超過100秒未下載到資料使用 Proxy: 
+

@@ -1,0 +1,1891 @@
+2015-08-11 14:23:12.0966 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='OdIs88l2' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Davos (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pardubice (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','00:00','E',@teamaid,@teambid,'1,3,0','2,4,1','4','7','OdIs88l2','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='t4T4A7ct' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Nove Zamky (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pavlodar (Kaz)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','00:00','E',@teamaid,@teambid,'1,4,2','3,1,1','7','5','t4T4A7ct','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='EHRC8oSh' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lillehammer (Nor)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lorenskog (Nor)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','00:30','E',@teamaid,@teambid,'1,2,1','1,0,0','4','1','EHRC8oSh','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='vmTOEJ5H' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Fribourg (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='CSKA Moscow (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','02:30','E',@teamaid,@teambid,'0,1,0','1,1,1','1','3','vmTOEJ5H','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='l4Pzj8og' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Zvezda-VDV Dmitrov (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Khimik (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','18:00','X',@teamaid,@teambid,NULL,NULL,'0','0','l4Pzj8og','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='bLsFY6GI' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='MHC Spartak (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Amurskie Tigry (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','19:00','X',@teamaid,@teambid,NULL,NULL,'0','0','bLsFY6GI','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='dQEQr6dG' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Zvezda Chekhov (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Voronezh (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','dQEQr6dG','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='xCtJXQVO' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Ladya (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Reaktor (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','xCtJXQVO','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='hxWRiUGt' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Neva St. Petersburg (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karaganda (Kaz)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','hxWRiUGt','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='jTq0dA8P' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Russkie Vityazi (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sakhalinskie Akuly (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','jTq0dA8P','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='rPDHFvWb' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Liberec (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Mlada Boleslav (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','rPDHFvWb','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='zHDUsQBM' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Liptovsky Mikulas (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Martin (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','zHDUsQBM','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='zLJCV2qB' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Olomouc (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Poprad (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','zLJCV2qB','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='rROvkS0a' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Tver (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Krasnoyarsk (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','rROvkS0a','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='tfjpvzWD' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Litvinov (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Amur Khabarovsk (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','tfjpvzWD','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='ng8Zownr' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Most (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sokolov (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','ng8Zownr','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='Iu3ZtpRS' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='RoKi (Fin)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Hokki (Fin)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','Iu3ZtpRS','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='z1LWjlWn' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slavutych Smolensk (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sakhalin (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','z1LWjlWn','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='MHNrlnG5' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Trinec (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Nizhny Novgorod (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','MHNrlnG5','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='f1f1x4Zq' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vaasan Sport (Fin)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karpat (Fin)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','f1f1x4Zq','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='r3C5fhXJ' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Czech Republic U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Canada U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','01:10','E',@teamaid,@teambid,'1,0,0','2,0,1','1','3','r3C5fhXJ','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='MgB9gCnQ' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Russia U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='USA U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','MgB9gCnQ','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='2mgxkWfs' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sweden U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Canada U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','21:30','X',@teamaid,@teambid,NULL,NULL,'0','0','2mgxkWfs','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='tvhtljAm' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovakia U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Finland U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','tvhtljAm','','','IHBF',0)
+end
+end
+ 
+
+2015-08-11 14:23:13.4251 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='nczXDwI8' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kometa Brno (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovan Bratislava (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','nczXDwI8','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='fcflwfoK' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Litomerice (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Mountfield HK (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','fcflwfoK','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='r5s5glFd' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Plzen (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karlovy Vary (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','r5s5glFd','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='2emCIyNJ' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Prostejov (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Trebic (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','2emCIyNJ','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='lOg5yOlj' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Ryazan (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sarov (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','lOg5yOlj','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='lbdsX0Lo' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Servette (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Munchen (Ger)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','lbdsX0Lo','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='bgwGZEbs' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Skalica (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Piestany (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','bgwGZEbs','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='6LBVHbX1' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slavia Prague (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Benatky (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','6LBVHbX1','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='OYJ77BEI' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sumperk (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vsetin (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','OYJ77BEI','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='fFet5IhK' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Usti nad Labem (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kladno (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','fFet5IhK','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='SEh9zr4d' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Aalborg (Den)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Frederikshavn (Den)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','SEh9zr4d','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='jyEX68bl' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Linkopings (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Skelleftea (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','jyEX68bl','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='jeYd91Kn' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pantern (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Malmö (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','jeYd91Kn','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='YHd82g72' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vasteras (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Djurgardens (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','YHd82g72','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='S6bpaRtc' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Langenthal (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Biel (Sui)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:30','X',@teamaid,@teambid,NULL,NULL,'0','0','S6bpaRtc','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='OGlfUb54' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Tigers (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Dusseldorf (Ger)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:45','X',@teamaid,@teambid,NULL,NULL,'0','0','OGlfUb54','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='Q1dQWiR2' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lausanne (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pardubice (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','02:30','X',@teamaid,@teambid,NULL,NULL,'0','0','Q1dQWiR2','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='p4SV0gSi' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Barys Astana (Kaz)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vladivostok (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','p4SV0gSi','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='x0GsZqwr' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lokomotiv Yaroslavl (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Cherepovets (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','x0GsZqwr','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='bqf2zyO9' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vitkovice (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kosice (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','bqf2zyO9','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='z1ipmAPg' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Czech Republic U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Switzerland U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:10','X',@teamaid,@teambid,NULL,NULL,'0','0','z1ipmAPg','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='l4elnUv0' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Russia U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Finland U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','l4elnUv0','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='WSpgolf6' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Switzerland U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Canada U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','21:30','X',@teamaid,@teambid,NULL,NULL,'0','0','WSpgolf6','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='AJqcp89C' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovakia U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='USA U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','AJqcp89C','','','IHBF',0)
+end
+end
+ 
+
+2015-08-11 14:23:13.6700 | INFO | updateGameData:
+declare @ctrlStates int
+begin
+select @ctrlStates=CtrlStates from [IceHockeySchedules] with(nolock) where webid='OEZL0dn9'
+IF @ctrlStates=0 OR @ctrlStates=2
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='E',[RunsA] ='0,2,1',[RunsB] = '0,3,3',[RA] = '3',[RB] = '6',[TrackerText] ='',[GameDate]='2015-08-11',[GameTime]='01:00',[ChangeCount] =[ChangeCount]+1,[StatusText]='結束' where webid='OEZL0dn9' AND GameType='IHBF'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='E',[TrackerText] ='',[StatusText] = '結束',[Record]=NULL,[GameDate]='2015-08-11',[GameTime]='01:00',[ChangeCount] =[ChangeCount]+1 where webid='OEZL0dn9' and gametype='IHBF'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [IceHockeySchedules] SET [RunsA] ='0,2,1',[RunsB] = '0,3,3',[RA] = 3,[RB] = 6,[StatusText] = '結束',[ChangeCount] =[ChangeCount]+1 where webid='OEZL0dn9' and gametype='IHBF'
+end
+end
+ 
+
+2015-08-11 14:23:13.9044 | INFO | updateGameData:
+declare @ctrlStates int
+begin
+select @ctrlStates=CtrlStates from [IceHockeySchedules] with(nolock) where webid='8KjcbOs8'
+IF @ctrlStates=0 OR @ctrlStates=2
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='X',[RunsA] =NULL,[RunsB] = NULL,[RA] = '0',[RB] = '0',[TrackerText] ='',[GameDate]='2015-08-12',[GameTime]='22:30',[ChangeCount] =[ChangeCount]+1,[StatusText]='' where webid='8KjcbOs8' AND GameType='IHBF'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='X',[TrackerText] ='',[StatusText] = NULL,[Record]=NULL,[GameDate]='2015-08-12',[GameTime]='22:30',[ChangeCount] =[ChangeCount]+1 where webid='8KjcbOs8' and gametype='IHBF'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [IceHockeySchedules] SET [RunsA] =NULL,[RunsB] = NULL,[RA] = 0,[RB] = 0,[StatusText] = NULL,[ChangeCount] =[ChangeCount]+1 where webid='8KjcbOs8' and gametype='IHBF'
+end
+end
+ 
+
+2015-08-11 14:23:14.2482 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='OEZL0dn9' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='OdIs88l2' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='t4T4A7ct' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='EHRC8oSh' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='vmTOEJ5H' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='l4Pzj8og' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='bLsFY6GI' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='dQEQr6dG' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='xCtJXQVO' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='hxWRiUGt' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='jTq0dA8P' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='rPDHFvWb' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='zHDUsQBM' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='zLJCV2qB' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='rROvkS0a' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='tfjpvzWD' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='ng8Zownr' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='Iu3ZtpRS' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='z1LWjlWn' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='MHNrlnG5' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='f1f1x4Zq' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='r3C5fhXJ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='MgB9gCnQ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='2mgxkWfs' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='tvhtljAm' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:23:14.5762 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='8KjcbOs8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='nczXDwI8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='fcflwfoK' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='r5s5glFd' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='2emCIyNJ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='lOg5yOlj' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='lbdsX0Lo' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='bgwGZEbs' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='6LBVHbX1' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='OYJ77BEI' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='fFet5IhK' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='SEh9zr4d' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='jyEX68bl' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='jeYd91Kn' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='YHd82g72' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='S6bpaRtc' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='OGlfUb54' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='Q1dQWiR2' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='p4SV0gSi' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='x0GsZqwr' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='bqf2zyO9' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='z1ipmAPg' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='l4elnUv0' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='WSpgolf6' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='AJqcp89C' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:30:12.1061 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='2uXREYN7' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Znojmo (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Amur Khabarovsk (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-13','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','2uXREYN7','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='v50UVBt9' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Ajoie (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pardubice (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-13','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','v50UVBt9','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='6cclbod3' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Almtuna (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Leksands (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-13','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','6cclbod3','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='n3VlFWj8' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Tingsryds (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karlskrona (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-13','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','n3VlFWj8','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='vgImm6VB' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vitkovice (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Nizhny Novgorod (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-13','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','vgImm6VB','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='0dCwoc1l' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Most (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kadan (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-13','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','0dCwoc1l','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='Iqq1qSOI' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Czech Republic U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sweden U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-13','01:10','X',@teamaid,@teambid,NULL,NULL,'0','0','Iqq1qSOI','','','IHBF',0)
+end
+end
+ 
+
+2015-08-11 14:30:12.2624 | INFO | updateGameData:
+declare @ctrlStates int
+begin
+select @ctrlStates=CtrlStates from [IceHockeySchedules] with(nolock) where webid='4nQGkWw8'
+IF @ctrlStates=0 OR @ctrlStates=2
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='X',[RunsA] =NULL,[RunsB] = NULL,[RA] = '0',[RB] = '0',[TrackerText] ='',[GameDate]='2015-08-13',[GameTime]='02:00',[ChangeCount] =[ChangeCount]+1,[StatusText]='' where webid='4nQGkWw8' AND GameType='IHBF'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='X',[TrackerText] ='',[StatusText] = NULL,[Record]=NULL,[GameDate]='2015-08-13',[GameTime]='02:00',[ChangeCount] =[ChangeCount]+1 where webid='4nQGkWw8' and gametype='IHBF'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [IceHockeySchedules] SET [RunsA] =NULL,[RunsB] = NULL,[RA] = 0,[RB] = 0,[StatusText] = NULL,[ChangeCount] =[ChangeCount]+1 where webid='4nQGkWw8' and gametype='IHBF'
+end
+select @ctrlStates=CtrlStates from [IceHockeySchedules] with(nolock) where webid='jqMCjCO1'
+IF @ctrlStates=0 OR @ctrlStates=2
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='X',[RunsA] =NULL,[RunsB] = NULL,[RA] = '0',[RB] = '0',[TrackerText] ='',[GameDate]='2015-08-13',[GameTime]='21:30',[ChangeCount] =[ChangeCount]+1,[StatusText]='' where webid='jqMCjCO1' AND GameType='IHBF'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='X',[TrackerText] ='',[StatusText] = NULL,[Record]=NULL,[GameDate]='2015-08-13',[GameTime]='21:30',[ChangeCount] =[ChangeCount]+1 where webid='jqMCjCO1' and gametype='IHBF'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [IceHockeySchedules] SET [RunsA] =NULL,[RunsB] = NULL,[RA] = 0,[RB] = 0,[StatusText] = NULL,[ChangeCount] =[ChangeCount]+1 where webid='jqMCjCO1' and gametype='IHBF'
+end
+end
+ 
+
+2015-08-11 14:30:12.4030 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='4nQGkWw8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='jqMCjCO1' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='2uXREYN7' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='v50UVBt9' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='6cclbod3' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='n3VlFWj8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='vgImm6VB' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='0dCwoc1l' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='Iqq1qSOI' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:30:38.1474 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='bHafuwTl' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='CANADA: QMJHL - Pre-season' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Saint John' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Acadie-Bathurst Titan' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','06:00','X',@teamaid,@teambid,NULL,NULL,'0','0','bHafuwTl','只顯示最終比分','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='x8bbvcre' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='CANADA: QMJHL - Pre-season' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Shawinigan Cataractes' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Victoriaville Tigres' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','07:00','X',@teamaid,@teambid,NULL,NULL,'0','0','x8bbvcre','只顯示最終比分','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='dMM8ih9e' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Friendly International' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Switzerland U17' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Germany U17' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','01:30','X',@teamaid,@teambid,NULL,NULL,'0','0','dMM8ih9e','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='IVN4hYgk' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Friendly International' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='USA U17' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovakia U17' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','21:30','X',@teamaid,@teambid,NULL,NULL,'0','0','IVN4hYgk','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='C8eC1DM8' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Djurgardens (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Skelleftea (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','C8eC1DM8','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='K8BPR9zE' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Hameenlinna (Fin)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lulea (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','K8BPR9zE','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='nisttBJi' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Havirov (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sumperk (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','nisttBJi','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='nw8o2tJd' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karlovy Vary (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slavia Prague (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','nw8o2tJd','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='ULPyDcXE' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kometa Brno (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Ceske Budejovice (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','ULPyDcXE','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='xnDLEbo5' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Mlada Boleslav (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Liberec (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','xnDLEbo5','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='8SC3Rdn8' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Mountfield HK (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Olomouc (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','8SC3Rdn8','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='SAnpuyyK' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pavlodar (Kaz)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Ban. Bystrica (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','SAnpuyyK','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='tISKYYDm' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Piestany (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Skalica (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','tISKYYDm','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='hY9kIh9f' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Plzen (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Chomutov (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','hY9kIh9f','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='tnnGHexQ' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Trebic (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Prostejov (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','tnnGHexQ','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='xvoo4x8Q' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Usti nad Labem (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Litomerice (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','xvoo4x8Q','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='UHTizRUu' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Zlin (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovan Bratislava (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','UHTizRUu','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='rHsTQvH2' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Zurich (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Dornbirn (Aut)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','rHsTQvH2','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='veBaZfwG' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Trinec (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kosice (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','00:30','X',@teamaid,@teambid,NULL,NULL,'0','0','veBaZfwG','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='Srh0XwXl' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Dukla Trencin (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Jihlava (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','Srh0XwXl','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='4bx18LZh' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Malmö (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vaxjo (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','4bx18LZh','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='YL81RDxP' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Biel (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Dusseldorf (Ger)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','01:45','X',@teamaid,@teambid,NULL,NULL,'0','0','YL81RDxP','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='ze8a8Hro' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lausanne (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Servette (Sui)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','02:00','X',@teamaid,@teambid,NULL,NULL,'0','0','ze8a8Hro','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='GtKlibHG' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Morzine-Avoriaz (Fra)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Annecy (Fra)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','02:45','X',@teamaid,@teambid,NULL,NULL,'0','0','GtKlibHG','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='dYYhAs5t' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karpat (Fin)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lulea (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','dYYhAs5t','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='IoA3YEhM' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Nizhny Novgorod (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kosice (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','IoA3YEhM','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='jLXow96P' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Nurnberg Ice Tigers (Ger)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Medvescak Zagreb (Cro)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','20:30','X',@teamaid,@teambid,NULL,NULL,'0','0','jLXow96P','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='6Zj4Wcne' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Ban. Bystrica (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Jihlava (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','6Zj4Wcne','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='KOsGvsjQ' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='LeKi (Fin)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='TuTo (Fin)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-14','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','KOsGvsjQ','','','IHBF',1)
+end
+end
+ 
+
+2015-08-11 14:30:38.2583 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='4nQGkWw8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='jqMCjCO1' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='2uXREYN7' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='v50UVBt9' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='6cclbod3' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='n3VlFWj8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='vgImm6VB' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='0dCwoc1l' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='Iqq1qSOI' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:30:38.5552 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='bHafuwTl' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='x8bbvcre' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='dMM8ih9e' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='IVN4hYgk' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='C8eC1DM8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='K8BPR9zE' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='nisttBJi' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='nw8o2tJd' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='ULPyDcXE' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='xnDLEbo5' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='8SC3Rdn8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='SAnpuyyK' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='tISKYYDm' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='hY9kIh9f' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='tnnGHexQ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='xvoo4x8Q' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='UHTizRUu' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='rHsTQvH2' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='veBaZfwG' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='Srh0XwXl' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='4bx18LZh' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='YL81RDxP' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='ze8a8Hro' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='GtKlibHG' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='dYYhAs5t' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='IoA3YEhM' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='jLXow96P' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='6Zj4Wcne' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='KOsGvsjQ' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:30:58.8294 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='AkAXQnoL' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Dinamo Riga (Lat)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Bars Kazan (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-18','00:30','X',@teamaid,@teambid,NULL,NULL,'0','0','AkAXQnoL','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='YPKrbiCA' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lada (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vladivostok (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-18','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','YPKrbiCA','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='KMf9qhcH' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Metallurg Magnitogorsk (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Avangard Omsk (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-18','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','KMf9qhcH','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='dOLhliJi' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vitkovice (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovan Bratislava (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-18','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','dOLhliJi','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='YmH6RB4b' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Ceske Budejovice (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kladno (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-18','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','YmH6RB4b','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='f3Bg0Km9' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Chomutov (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karlovy Vary (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-18','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','f3Bg0Km9','','','IHBF',1)
+end
+end
+ 
+
+2015-08-11 14:30:59.1107 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='4nQGkWw8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='jqMCjCO1' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='2uXREYN7' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='v50UVBt9' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='6cclbod3' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='n3VlFWj8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='vgImm6VB' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='0dCwoc1l' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='Iqq1qSOI' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:31:00.2669 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='bHafuwTl' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='x8bbvcre' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='dMM8ih9e' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='IVN4hYgk' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='C8eC1DM8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='K8BPR9zE' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='nisttBJi' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='nw8o2tJd' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='ULPyDcXE' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='xnDLEbo5' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='8SC3Rdn8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='SAnpuyyK' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='tISKYYDm' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='hY9kIh9f' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='tnnGHexQ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='xvoo4x8Q' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='UHTizRUu' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='rHsTQvH2' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='veBaZfwG' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='Srh0XwXl' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='4bx18LZh' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='YL81RDxP' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='ze8a8Hro' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='GtKlibHG' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='dYYhAs5t' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='IoA3YEhM' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='jLXow96P' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='6Zj4Wcne' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='KOsGvsjQ' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:31:00.5950 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='AkAXQnoL' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='YPKrbiCA' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='KMf9qhcH' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='dOLhliJi' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='YmH6RB4b' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='f3Bg0Km9' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:32:31.7679 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='MDTWJPwh' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='CSKA Moscow (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Davos (Sui)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','01:00','E',@teamaid,@teambid,'0,2,4','1,1,0','6','2','MDTWJPwh','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='b7xbmydp' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Temirtau (Kaz)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kulager (Kaz)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','15:00','E',@teamaid,@teambid,'0,2,0','1,2,1','2','4','b7xbmydp','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='6DTR1ZCo' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Metallurg Novokuznetsk (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vladivostok (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','16:00','E',@teamaid,@teambid,'0,1,0','1,0,1','1','2','6DTR1ZCo','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='46KP5qCB' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Stalnye Lisy (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Gornyak Rudny U21 (Kaz)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','16:00','E',@teamaid,@teambid,'1,0,0,0,1','0,0,1,0,0','2','1','46KP5qCB','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='nTjerFv0' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Avangard Omsk (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Metallurg Magnitogorsk (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','18:00','E',@teamaid,@teambid,'1,2,2','0,2,0','5','2','nTjerFv0','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='0Od54ade' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='MHC Spartak (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Amurskie Tigry (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','19:00','E',@teamaid,@teambid,'6,1,2','1,1,1','9','3','0Od54ade','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='I9OT43RH' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Avto (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sarmaty U21 (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','20:00','E',@teamaid,@teambid,'0,1,0','0,0,0','1','0','I9OT43RH','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='Uit0sZg6' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Barys Astana (Kaz)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='HC Yugra (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','21:00','E',@teamaid,@teambid,'0,0,1','0,0,2','1','2','Uit0sZg6','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='xby2neBj' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kokshetau (Kaz)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='HC Astana (Kaz)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','21:00','E',@teamaid,@teambid,'3,1,2','0,2,0','6','2','xby2neBj','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='lrYiqePg' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Tractor Chelyabinsk (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Yekaterinburg (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','22:00','E',@teamaid,@teambid,'0,0,2,0,0','1,1,0,0,1','2','3','lrYiqePg','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='6BxwFmkP' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Bardejov (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Krakow (Pol)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','23:00','E',@teamaid,@teambid,'1,1,0','2,0,0','3','2','6BxwFmkP','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='SpT13JB1' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Espoo (Fin)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='SKA St. Petersburg (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','23:30','E',@teamaid,@teambid,'1,2,2','1,1,2','5','4','SpT13JB1','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='bRp0F5EI' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Jokerit (Fin)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sibir Novosibirsk (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','23:30','E',@teamaid,@teambid,'1,2,1','0,1,1','4','2','bRp0F5EI','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='ljGFXUP6' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Finland U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='USA U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','20:00','E',@teamaid,@teambid,'4,1,0','0,1,0','5','1','ljGFXUP6','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='WE5KWluD' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sweden U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Switzerland U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','21:30','E',@teamaid,@teambid,'1,2,1','1,0,2','4','3','WE5KWluD','','結束','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='UaONV8fJ' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovakia U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Russia U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-10','23:30','E',@teamaid,@teambid,'1,0,1','3,1,1','2','5','UaONV8fJ','','結束','IHBF',1)
+end
+end
+ 
+
+2015-08-11 14:32:31.9398 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='MDTWJPwh' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='b7xbmydp' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='6DTR1ZCo' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='46KP5qCB' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='nTjerFv0' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='0Od54ade' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='I9OT43RH' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='Uit0sZg6' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='xby2neBj' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='lrYiqePg' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='6BxwFmkP' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='SpT13JB1' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='bRp0F5EI' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='ljGFXUP6' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='WE5KWluD' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='UaONV8fJ' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:32:32.1121 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='4nQGkWw8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='jqMCjCO1' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='2uXREYN7' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='v50UVBt9' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='6cclbod3' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='n3VlFWj8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='vgImm6VB' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='0dCwoc1l' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='Iqq1qSOI' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:32:32.3777 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='bHafuwTl' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='x8bbvcre' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='dMM8ih9e' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='IVN4hYgk' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='C8eC1DM8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='K8BPR9zE' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='nisttBJi' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='nw8o2tJd' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='ULPyDcXE' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='xnDLEbo5' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='8SC3Rdn8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='SAnpuyyK' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='tISKYYDm' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='hY9kIh9f' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='tnnGHexQ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='xvoo4x8Q' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='UHTizRUu' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='rHsTQvH2' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='veBaZfwG' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='Srh0XwXl' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='4bx18LZh' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='YL81RDxP' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='ze8a8Hro' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='GtKlibHG' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='dYYhAs5t' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='IoA3YEhM' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='jLXow96P' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='6Zj4Wcne' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='KOsGvsjQ' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:32:32.5496 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='AkAXQnoL' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='YPKrbiCA' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='KMf9qhcH' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='dOLhliJi' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='YmH6RB4b' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='f3Bg0Km9' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:36:17.1645 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='OdIs88l2' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Davos (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pardubice (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','00:00','E',@teamaid,@teambid,'1,3,0','2,4,1','4','7','OdIs88l2','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='t4T4A7ct' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Nove Zamky (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pavlodar (Kaz)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','00:00','E',@teamaid,@teambid,'1,4,2','3,1,1','7','5','t4T4A7ct','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='EHRC8oSh' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lillehammer (Nor)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lorenskog (Nor)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','00:30','E',@teamaid,@teambid,'1,2,1','1,0,0','4','1','EHRC8oSh','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='vmTOEJ5H' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Fribourg (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='CSKA Moscow (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','02:30','E',@teamaid,@teambid,'0,1,0','1,1,1','1','3','vmTOEJ5H','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='l4Pzj8og' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Zvezda-VDV Dmitrov (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Khimik (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','18:00','X',@teamaid,@teambid,NULL,NULL,'0','0','l4Pzj8og','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='bLsFY6GI' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='MHC Spartak (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Amurskie Tigry (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','19:00','X',@teamaid,@teambid,NULL,NULL,'0','0','bLsFY6GI','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='dQEQr6dG' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Zvezda Chekhov (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Voronezh (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','dQEQr6dG','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='xCtJXQVO' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Ladya (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Reaktor (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','xCtJXQVO','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='hxWRiUGt' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Neva St. Petersburg (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karaganda (Kaz)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','hxWRiUGt','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='jTq0dA8P' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Russkie Vityazi (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sakhalinskie Akuly (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','jTq0dA8P','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='rPDHFvWb' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Liberec (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Mlada Boleslav (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','rPDHFvWb','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='zHDUsQBM' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Liptovsky Mikulas (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Martin (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','zHDUsQBM','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='zLJCV2qB' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Olomouc (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Poprad (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','zLJCV2qB','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='rROvkS0a' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Tver (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Krasnoyarsk (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:00','X',@teamaid,@teambid,NULL,NULL,'0','0','rROvkS0a','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='tfjpvzWD' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Litvinov (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Amur Khabarovsk (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','tfjpvzWD','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='ng8Zownr' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Most (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sokolov (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','ng8Zownr','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='Iu3ZtpRS' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='RoKi (Fin)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Hokki (Fin)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','Iu3ZtpRS','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='z1LWjlWn' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slavutych Smolensk (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sakhalin (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','z1LWjlWn','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='MHNrlnG5' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Trinec (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Nizhny Novgorod (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','MHNrlnG5','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='f1f1x4Zq' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vaasan Sport (Fin)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karpat (Fin)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','f1f1x4Zq','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='r3C5fhXJ' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Czech Republic U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Canada U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','01:10','E',@teamaid,@teambid,'1,0,0','2,0,1','1','3','r3C5fhXJ','','結束','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='MgB9gCnQ' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Russia U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='USA U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','MgB9gCnQ','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='2mgxkWfs' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sweden U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Canada U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','21:30','X',@teamaid,@teambid,NULL,NULL,'0','0','2mgxkWfs','','','IHBF',0)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='tvhtljAm' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovakia U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Finland U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-11','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','tvhtljAm','','','IHBF',0)
+end
+end
+ 
+
+2015-08-11 14:36:17.2739 | INFO | updateGameData:
+declare @ctrlStates int
+begin
+select @ctrlStates=CtrlStates from [IceHockeySchedules] with(nolock) where webid='OEZL0dn9'
+IF @ctrlStates=0 OR @ctrlStates=2
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='E',[RunsA] ='0,2,1',[RunsB] = '0,3,3',[RA] = '3',[RB] = '6',[TrackerText] ='',[GameDate]='2015-08-11',[GameTime]='01:00',[ChangeCount] =[ChangeCount]+1,[StatusText]='結束' where webid='OEZL0dn9' AND GameType='IHBF'
+end
+ELSE IF @ctrlStates=1
+begin
+UPDATE [IceHockeySchedules] SET [GameStates] ='E',[TrackerText] ='',[StatusText] = '結束',[Record]=NULL,[GameDate]='2015-08-11',[GameTime]='01:00',[ChangeCount] =[ChangeCount]+1 where webid='OEZL0dn9' and gametype='IHBF'
+end
+ELSE IF @ctrlStates=3
+begin
+UPDATE [IceHockeySchedules] SET [RunsA] ='0,2,1',[RunsB] = '0,3,3',[RA] = 3,[RB] = 6,[StatusText] = '結束',[ChangeCount] =[ChangeCount]+1 where webid='OEZL0dn9' and gametype='IHBF'
+end
+end
+ 
+
+2015-08-11 14:36:17.3992 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='OEZL0dn9' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='OdIs88l2' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='t4T4A7ct' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='EHRC8oSh' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='vmTOEJ5H' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='l4Pzj8og' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='bLsFY6GI' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='dQEQr6dG' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='xCtJXQVO' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='hxWRiUGt' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='jTq0dA8P' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='rPDHFvWb' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='zHDUsQBM' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='zLJCV2qB' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='rROvkS0a' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='tfjpvzWD' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='ng8Zownr' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='Iu3ZtpRS' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='z1LWjlWn' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='MHNrlnG5' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='f1f1x4Zq' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='r3C5fhXJ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='MgB9gCnQ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='2mgxkWfs' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='tvhtljAm' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:36:42.8141 | INFO | addGameData:
+declare @webid nvarchar(50)
+declare @allianceid int,@teamaid int ,@teambid int
+begin
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='8KjcbOs8' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Friendly International' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Czech Republic U17' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='USA U17' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','22:30','X',@teamaid,@teambid,NULL,NULL,'0','0','8KjcbOs8','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='nczXDwI8' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kometa Brno (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovan Bratislava (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','nczXDwI8','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='fcflwfoK' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Litomerice (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Mountfield HK (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','fcflwfoK','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='r5s5glFd' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Plzen (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Karlovy Vary (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','r5s5glFd','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='2emCIyNJ' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Prostejov (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Trebic (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','2emCIyNJ','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='lOg5yOlj' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Ryazan (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sarov (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','lOg5yOlj','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='lbdsX0Lo' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Servette (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Munchen (Ger)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','lbdsX0Lo','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='bgwGZEbs' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Skalica (Svk)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Piestany (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','bgwGZEbs','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='6LBVHbX1' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slavia Prague (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Benatky (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','6LBVHbX1','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='OYJ77BEI' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Sumperk (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vsetin (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','OYJ77BEI','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='fFet5IhK' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Usti nad Labem (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kladno (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','00:00','X',@teamaid,@teambid,NULL,NULL,'0','0','fFet5IhK','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='SEh9zr4d' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Aalborg (Den)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Frederikshavn (Den)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','SEh9zr4d','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='jyEX68bl' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Linkopings (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Skelleftea (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','jyEX68bl','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='jeYd91Kn' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pantern (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Malmö (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','jeYd91Kn','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='YHd82g72' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vasteras (Swe)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Djurgardens (Swe)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:00','X',@teamaid,@teambid,NULL,NULL,'0','0','YHd82g72','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='S6bpaRtc' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Langenthal (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Biel (Sui)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:30','X',@teamaid,@teambid,NULL,NULL,'0','0','S6bpaRtc','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='OGlfUb54' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Tigers (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Dusseldorf (Ger)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:45','X',@teamaid,@teambid,NULL,NULL,'0','0','OGlfUb54','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='Q1dQWiR2' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lausanne (Sui)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Pardubice (Cze)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','02:30','X',@teamaid,@teambid,NULL,NULL,'0','0','Q1dQWiR2','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='p4SV0gSi' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Barys Astana (Kaz)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vladivostok (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','p4SV0gSi','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='x0GsZqwr' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Lokomotiv Yaroslavl (Rus)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Cherepovets (Rus)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','22:00','X',@teamaid,@teambid,NULL,NULL,'0','0','x0GsZqwr','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='bqf2zyO9' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Club Friendly' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Vitkovice (Cze)' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Kosice (Svk)' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','bqf2zyO9','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='z1ipmAPg' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Czech Republic U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Switzerland U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','01:10','X',@teamaid,@teambid,NULL,NULL,'0','0','z1ipmAPg','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='l4elnUv0' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Russia U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Finland U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','20:00','X',@teamaid,@teambid,NULL,NULL,'0','0','l4elnUv0','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='WSpgolf6' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Switzerland U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Canada U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','21:30','X',@teamaid,@teambid,NULL,NULL,'0','0','WSpgolf6','','','IHBF',1)
+end
+set @webid=null
+select @webid=webid from [IceHockeySchedules] with(nolock) where webid='AJqcp89C' AND GameType='IHBF'
+if @webid is null
+begin
+select @allianceid=allianceid from [IceHockeyAlliance] with(nolock) where alliancename='WORLD: Ivan Hlinka Memorial Cup' and gametype='IHBF'
+SELECT @teamaid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='Slovakia U18' and gametype='IHBF'
+SELECT @teambid=teamid FROM [IceHockeyTeam] WITH (NOLOCK) WHERE TeamName='USA U18' and gametype='IHBF'
+INSERT INTO [IceHockeySchedules] ([AllianceID],[GameDate],[GameTime],[GameStates],[TeamAID],[TeamBID],[RunsA],[RunsB],[RA],[RB],[WebID],[TrackerText],[StatusText],[GameType],[Display]) VALUES (@allianceid,'2015-08-12','23:30','X',@teamaid,@teambid,NULL,NULL,'0','0','AJqcp89C','','','IHBF',1)
+end
+end
+ 
+
+2015-08-11 14:36:43.5953 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='OEZL0dn9' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='OdIs88l2' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='t4T4A7ct' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='EHRC8oSh' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='vmTOEJ5H' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='l4Pzj8og' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='bLsFY6GI' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='dQEQr6dG' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='xCtJXQVO' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='hxWRiUGt' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='jTq0dA8P' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='rPDHFvWb' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='zHDUsQBM' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='zLJCV2qB' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='rROvkS0a' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='tfjpvzWD' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='ng8Zownr' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='Iu3ZtpRS' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='z1LWjlWn' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='MHNrlnG5' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='f1f1x4Zq' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='r3C5fhXJ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='MgB9gCnQ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='2mgxkWfs' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='tvhtljAm' AND  GameType='IHBF'
+end
+ 
+
+2015-08-11 14:36:44.0485 | INFO | OrderBy:
+begin
+UPDATE [IceHockeySchedules] SET [OrderBy] =1 where webid='8KjcbOs8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='nczXDwI8' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='fcflwfoK' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='r5s5glFd' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='2emCIyNJ' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='lOg5yOlj' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='lbdsX0Lo' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='bgwGZEbs' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='6LBVHbX1' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='OYJ77BEI' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='fFet5IhK' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='SEh9zr4d' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='jyEX68bl' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='jeYd91Kn' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='YHd82g72' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='S6bpaRtc' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='OGlfUb54' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='Q1dQWiR2' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='p4SV0gSi' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='x0GsZqwr' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =2 where webid='bqf2zyO9' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='z1ipmAPg' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='l4elnUv0' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='WSpgolf6' AND  GameType='IHBF'
+UPDATE [IceHockeySchedules] SET [OrderBy] =3 where webid='AJqcp89C' AND  GameType='IHBF'
+end
+ 
+

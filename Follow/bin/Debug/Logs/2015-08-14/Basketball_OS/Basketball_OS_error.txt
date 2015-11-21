@@ -1,0 +1,468 @@
+2015-08-14 12:59:46.8296 | ERROR | http://interface.win007.com/lq/today.aspx
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:46.8376 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:47.7751 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-14
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:47.7901 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-13
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:48.9227 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:48.9737 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-18
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:50.0786 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-15
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:50.1046 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-20
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:51.2054 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-17
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:51.2264 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-19
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:52.3483 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:54.1332 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:56.0378 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 12:59:58.0462 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:00.1304 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:10.0356 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:12.1133 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:14.0683 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:16.1874 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:18.1863 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:25.6131 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:28.1933 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:30.1486 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:32.1589 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:34.1675 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:36.1670 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:38.1646 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:40.1628 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:42.1889 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:44.2450 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:46.2373 | ERROR | http://interface.win007.com/lq/today.aspx
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:49.7490 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-13
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:50.9122 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-15
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:52.0697 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-17
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:53.1434 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-19
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:58.1860 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:59.3823 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-14
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:00:59.7615 | ERROR | http://interface.win007.com/lq/today.aspx
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:00.5168 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:00.8750 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-13
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:01.6182 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-18
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:02.0514 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-15
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:02.7427 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-20
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:03.1429 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-17
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:04.2805 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-19
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:05.4362 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-13
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:06.5383 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:07.6616 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-18
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:08.7760 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-17
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:09.8583 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-19
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:11.0700 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-13
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:12.1898 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:13.3153 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-17
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:14.4371 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-18
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:15.5629 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-13
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:15.8249 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:16.6304 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-19
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:16.8995 | ERROR | http://interface.win007.com/lq/today.aspx
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:17.7951 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:18.0533 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-14
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:18.9294 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-17
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:19.1485 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-15
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:20.0474 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-18
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:20.2564 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-20
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:21.2040 | ERROR | http://interface.win007.com/lq/today.aspx
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:21.4420 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:22.3497 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-13
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:22.5510 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-18
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:23.4344 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-14
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:23.6344 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-19
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:24.5344 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-16
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:24.7585 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-15
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:25.9885 | ERROR | http://interface.win007.com/lq/today.aspx
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:26.7516 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-20
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:27.9100 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-13
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:37.8877 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-17
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:39.0521 | ERROR | http://interface.win007.com/lq/change.xml
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+
+2015-08-14 13:01:39.0811 | ERROR | http://interface.win007.com/lq/LqSchedule.aspx?time=2015-08-18
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+ 
+

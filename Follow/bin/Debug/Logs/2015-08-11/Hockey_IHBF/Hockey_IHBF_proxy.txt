@@ -1,0 +1,234 @@
+2015-08-11 14:23:46.7497 | INFO | http://d.flashscore.com/x/feed/f_4_5_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:24:07.6268 | INFO | http://d.flashscore.com/x/feed/f_4_7_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:24:12.6125 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:24:28.6867 | INFO | http://d.flashscore.com/x/feed/f_4_3_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:25:19.9852 | INFO | http://d.flashscore.com/x/feed/f_4_0_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:27:10.3716 | INFO | http://d.flashscore.com/x/feed/f_4_6_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:27:10.3716 | INFO | http://d.flashscore.com/x/feed/f_4_0_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:30:33.6925 | INFO | http://d.flashscore.com/x/feed/f_4_1_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:31:20.3397 | INFO | http://d.flashscore.com/x/feed/f_4_-1_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:31:20.6991 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:31:20.6991 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:31:41.3490 | INFO | http://d.flashscore.com/x/feed/f_4_4_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:32:02.4771 | INFO | http://d.flashscore.com/x/feed/f_4_6_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:32:23.4301 | INFO | http://d.flashscore.com/x/feed/f_4_-1_8_asia_1
+ 發生錯誤：无法连接到远程服务器 詳細：   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.WebClient.GetWebResponse(WebRequest request, IAsyncResult result)
+   在 System.Net.WebClient.DownloadBitsResponseCallback(IAsyncResult result)
+使用 Proxy: 
+
+2015-08-11 14:33:02.8464 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:37:34.4753 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:37:54.9907 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:39:16.1962 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:39:36.4238 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:40:57.3952 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:41:17.6738 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:42:38.5860 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:42:58.7386 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:44:19.5085 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:44:39.6786 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:46:00.2317 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:46:20.3538 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:47:41.1999 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:48:01.9550 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:49:23.1073 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:49:43.4224 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:51:04.2653 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:51:24.5264 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:52:45.6108 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:53:05.7989 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:54:26.4919 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:54:46.7712 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:56:07.5885 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:56:27.8415 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:57:48.7450 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:58:09.1562 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:59:30.2625 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 14:59:50.5443 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:01:12.0872 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:01:32.2450 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:02:53.0567 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:03:13.2704 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:04:33.8975 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:04:54.1764 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:06:14.9880 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:06:35.1286 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:07:56.0332 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:08:16.3429 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:09:37.0725 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:09:57.3095 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:11:18.9102 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:11:39.0708 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:12:59.7431 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:13:19.8796 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:14:40.5781 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:15:00.7071 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:16:21.2920 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:16:41.4747 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:18:02.2301 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:18:22.6222 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:19:43.5369 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:20:03.7671 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:21:24.5788 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:21:44.7578 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:23:05.3858 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:23:25.4963 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:24:46.3468 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:25:06.4943 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:26:27.2688 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:26:47.5046 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:28:08.5067 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:28:28.6769 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:29:49.6157 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:30:09.9193 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:31:30.5556 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:31:50.8211 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:33:11.5370 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:33:31.7417 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:34:52.6014 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:35:12.8749 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:36:33.5329 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:36:53.7038 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:38:14.2440 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:38:34.5077 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:39:55.4499 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:40:15.6651 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:41:36.4085 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:41:56.5343 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:43:17.2873 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
+2015-08-11 15:43:37.4911 | INFO | 超過100秒未下載到資料使用 Proxy: 
+
